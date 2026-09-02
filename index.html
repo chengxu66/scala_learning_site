@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Java / Scala 编程学习站，提供课程路线、互动练习和整理后的课程讲义。" />
+  <title>Java / Scala 编程学习站</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-hero">
+    <nav class="top-nav">
+      <a class="brand" href="index.html">Java / Scala 编程学习站</a>
+      <div class="nav-links" aria-label="主导航">
+        <a href="java.html">Java</a>
+        <a href="scala.html">Scala</a>
+        <a href="summaries.html">讲义库</a>
+      </div>
+    </nav>
+
+    <section class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Public Learning Site</p>
+        <h1>学习路线先于资料列表。</h1>
+        <p class="hero-text">
+          面向同学公开使用的编程学习站。先选择 Java 或 Scala，再按照章节路线、知识地图、互动练习和整理后的讲义逐步复习。
+        </p>
+      </div>
+
+      <div class="hero-entries" aria-label="课程入口">
+        <article class="hero-entry java-entry">
+          <span class="entry-index">PATH 01</span>
+          <div>
+            <h2>Java 学习</h2>
+            <p>从变量、数组、分支循环，到类、继承、多态、抽象类和接口回调。</p>
+          </div>
+          <a class="btn primary" href="java.html">进入 Java</a>
+        </article>
+        <article class="hero-entry scala-entry">
+          <span class="entry-index">PATH 02</span>
+          <div>
+            <h2>Scala 学习</h2>
+            <p>从表达式、集合、函数，到类与对象、模式匹配、样例类和 Trait。</p>
+          </div>
+          <a class="btn" href="scala.html">进入 Scala</a>
+        </article>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="metric-strip" aria-label="站点数据">
+      <div><strong id="lessonCount">40</strong><span>互动课程</span></div>
+      <div><strong id="javaCount">19</strong><span>Java 课程</span></div>
+      <div><strong id="scalaCount">21</strong><span>Scala 课程</span></div>
+      <div><strong id="summaryCount">40</strong><span>整理讲义</span></div>
+    </section>
+
+    <section class="grid-section">
+      <div class="side-title">
+        <p class="eyebrow">Route Matrix</p>
+        <h2>按知识依赖学习，而不是按文件翻找。</h2>
+        <p>首页只负责分流和总览。每门语言都有独立课程主页，用路线、章节和知识点帮助学生判断下一步。</p>
+      </div>
+      <div class="route-matrix">
+        <a class="route-cell java" href="java.html">
+          <span>JAVA / 01</span>
+          <strong>基础语法</strong>
+          <p>变量、数据类型、数组与引用。</p>
+        </a>
+        <a class="route-cell java" href="java.html#stage-flow">
+          <span>JAVA / 02</span>
+          <strong>流程控制</strong>
+          <p>运算符、分支、循环和嵌套。</p>
+        </a>
+        <a class="route-cell java" href="java.html#stage-object">
+          <span>JAVA / 03</span>
+          <strong>类与对象</strong>
+          <p>方法、构造、封装和访问权限。</p>
+        </a>
+        <a class="route-cell java" href="java.html#stage-interface">
+          <span>JAVA / 04</span>
+          <strong>继承与接口</strong>
+          <p>多态、抽象类、接口与回调。</p>
+        </a>
+        <a class="route-cell scala" href="scala.html">
+          <span>SCALA / 01</span>
+          <strong>表达式基础</strong>
+          <p>var、val、类型推导、block 和元组。</p>
+        </a>
+        <a class="route-cell scala" href="scala.html#stage-collections">
+          <span>SCALA / 02</span>
+          <strong>集合与遍历</strong>
+          <p>数组、ArrayBuffer、Map、Set 和 for 推导式。</p>
+        </a>
+        <a class="route-cell scala" href="scala.html#stage-objects">
+          <span>SCALA / 03</span>
+          <strong>函数与对象</strong>
+          <p>函数、递归、类、字段、构造器和伴生对象。</p>
+        </a>
+        <a class="route-cell scala" href="scala.html#stage-traits">
+          <span>SCALA / 04</span>
+          <strong>模式与特质</strong>
+          <p>模式匹配、样例类、继承、重写和 Trait。</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="home-library">
+      <div>
+        <p class="eyebrow">Lecture Library</p>
+        <h2>讲义库只展示整理后的学习内容。</h2>
+        <p class="muted">
+          课程总结保留为公开资料，页面按语言、主题和互动入口重新组织。学生可以先看路线，也可以直接检索知识点。
+        </p>
+      </div>
+      <div class="library-actions">
+        <a class="btn primary" href="summaries.html">进入讲义库</a>
+        <a class="btn" href="java.html#practice">Java 互动练习</a>
+      </div>
+    </section>
+
+    <section class="grid-section latest-section">
+      <div class="side-title">
+        <p class="eyebrow">Start Here</p>
+        <h2>最近可以从这些课程开始。</h2>
+        <p>这里展示两门语言的起步课程。完整列表在各自课程主页中。</p>
+      </div>
+      <div class="lesson-grid compact-grid" id="lessonGrid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>静态学习站 · 适合 GitHub Pages 发布 · 不需要登录或后端服务</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/summaries-data.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

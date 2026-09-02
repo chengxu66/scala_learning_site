@@ -1,0 +1,10 @@
+node_modules/
+.playwright-cli/
+.superpowers/
+.gstack/
+output/
+.claude/
+java/课堂纪要/
+Scala/课堂纪要/
+design-demos/
+direction-approved.md

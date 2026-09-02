@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="浏览、搜索并阅读 Java 与 Scala 课程讲义。" />
+  <title>讲义库 - Java / Scala 编程学习站</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="library-header">
+    <nav class="top-nav">
+      <a class="brand" href="index.html">Java / Scala 编程学习站</a>
+      <div class="nav-links">
+        <a href="java.html">Java</a>
+        <a href="scala.html">Scala</a>
+        <a href="summaries.html" aria-current="page">讲义库</a>
+      </div>
+    </nav>
+    <section class="course-title-block">
+      <p class="eyebrow">Lecture Library</p>
+      <h1>讲义库</h1>
+      <p class="hero-text">集中阅读 Java 与 Scala 的整理版课程讲义。可以按语言筛选，也可以搜索知识点、标题、日期或课程序号。</p>
+    </section>
+  </header>
+
+  <main>
+    <section class="metric-strip" aria-label="讲义库数据">
+      <div><strong id="libraryTotal">40</strong><span>全部讲义</span></div>
+      <div><strong id="libraryJava">19</strong><span>Java 讲义</span></div>
+      <div><strong id="libraryScala">21</strong><span>Scala 讲义</span></div>
+      <div><strong id="libraryMapped">40</strong><span>可进入互动课</span></div>
+    </section>
+
+    <section class="grid-section">
+      <div class="side-title">
+        <p class="eyebrow">Find Material</p>
+        <h2>按语言和知识点定位讲义。</h2>
+        <p>讲义库保留课程顺序，但视觉上更强调学习资料和互动课程之间的连接。</p>
+      </div>
+      <div class="library-panel">
+        <section class="filters summary-filters" aria-labelledby="summaryFiltersTitle">
+          <h2 class="sr-only" id="summaryFiltersTitle">筛选课程讲义</h2>
+          <label class="filter-item">
+            <span>关键词搜索</span>
+            <input id="summarySearch" type="search" placeholder="输入 ArrayBuffer、接口、继承、03……" />
+          </label>
+          <label class="filter-item">
+            <span>课程语言</span>
+            <select id="summaryLanguage">
+              <option value="all">全部语言</option>
+              <option value="Java">Java</option>
+              <option value="Scala">Scala</option>
+            </select>
+          </label>
+          <button class="btn" id="resetSummaryFilters" type="button">重置</button>
+        </section>
+        <p class="result-info" id="summaryResultStatus" role="status" aria-live="polite">正在加载课程讲义……</p>
+      </div>
+    </section>
+
+    <section class="grid-section">
+      <div class="side-title">
+        <p class="eyebrow">Material Index</p>
+        <h2>讲义列表</h2>
+        <p>每篇讲义都可以回到对应互动课程，方便先读再练。</p>
+      </div>
+      <section class="summary-grid" id="summaryGrid" aria-label="课程讲义列表"></section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><a href="index.html">返回首页</a></p>
+  </footer>
+  <script src="js/summaries-data.js"></script>
+  <script type="module" src="js/summaries.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Java 学习路线，包含基础语法、流程控制、类与对象、继承、抽象类、接口和互动练习。" />
+  <title>Java 学习 - Java / Scala 编程学习站</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="course-hero course-hero-java">
+    <nav class="top-nav">
+      <a class="brand" href="index.html">Java / Scala 编程学习站</a>
+      <div class="nav-links">
+        <a href="java.html" aria-current="page">Java</a>
+        <a href="scala.html">Scala</a>
+        <a href="summaries.html?language=Java">Java 讲义</a>
+      </div>
+    </nav>
+    <section class="course-title-block">
+      <p class="eyebrow">PATH 01</p>
+      <h1>Java 学习</h1>
+      <p class="hero-text">从基础语法进入面向对象，把变量、数组、流程控制、类、继承、抽象类和接口连成一条清晰路线。</p>
+    </section>
+  </header>
+
+  <main>
+    <section class="metric-strip" aria-label="Java 学习数据">
+      <div><strong id="courseLessonCount">0</strong><span>互动课程</span></div>
+      <div><strong id="courseSummaryCount">0</strong><span>整理讲义</span></div>
+      <div><strong id="courseStageCount">4</strong><span>学习阶段</span></div>
+      <div><strong id="courseTopicCount">0</strong><span>知识标签</span></div>
+    </section>
+
+    <section class="grid-section">
+      <div class="side-title">
+        <p class="eyebrow">Learning Route</p>
+        <h2>先建立语法基础，再进入对象模型。</h2>
+        <p>Java 路线适合作为编程基础主线。每个阶段都配套互动课程和讲义入口。</p>
+      </div>
+      <div class="stage-list" id="stageList"></div>
+    </section>
+
+    <section class="grid-section">
+      <div class="side-title">
+        <p class="eyebrow">Lessons</p>
+        <h2>课程列表</h2>
+        <p>按章节和学习阶段整理，点击进入互动课程或对应讲义。</p>
+      </div>
+      <div class="course-browser">
+        <div class="course-tools">
+          <input id="courseSearch" type="search" placeholder="搜索 Java 知识点，例如 数组、继承、interface" />
+          <button class="btn" id="resetCourseSearch" type="button">重置</button>
+        </div>
+        <p class="result-info" id="courseResultInfo">正在加载课程……</p>
+        <div class="lesson-grid" id="courseLessonGrid"></div>
+      </div>
+    </section>
+
+    <section class="grid-section">
+      <div class="side-title">
+        <p class="eyebrow">Knowledge Map</p>
+        <h2>Java 知识点地图</h2>
+        <p>这些标签来自课程数据，可作为复习时的快速索引。</p>
+      </div>
+      <div class="knowledge-cloud" id="knowledgeCloud"></div>
+    </section>
+
+    <section class="grid-section" id="practice">
+      <div class="side-title">
+        <p class="eyebrow">Practice</p>
+        <h2>互动练习</h2>
+        <p>练习不会保存成绩，适合课后自测。</p>
+      </div>
+      <div class="game-grid" id="courseGameGrid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><a href="index.html">返回首页</a> · <a href="summaries.html?language=Java">查看 Java 讲义库</a></p>
+  </footer>
+
+  <script>globalThis.COURSE_LANGUAGE = "Java";</script>
+  <script src="js/data.js"></script>
+  <script src="js/summaries-data.js"></script>
+  <script src="js/course-page.js"></script>
+</body>
+</html>

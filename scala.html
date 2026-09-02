@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Scala 学习路线，包含表达式、函数、集合、类与对象、模式匹配、样例类和 Trait。" />
+  <title>Scala 学习 - Java / Scala 编程学习站</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="course-hero course-hero-scala">
+    <nav class="top-nav">
+      <a class="brand" href="index.html">Java / Scala 编程学习站</a>
+      <div class="nav-links">
+        <a href="java.html">Java</a>
+        <a href="scala.html" aria-current="page">Scala</a>
+        <a href="summaries.html?language=Scala">Scala 讲义</a>
+      </div>
+    </nav>
+    <section class="course-title-block">
+      <p class="eyebrow">PATH 02</p>
+      <h1>Scala 学习</h1>
+      <p class="hero-text">在 Java 基础之上理解 Scala 的表达式、集合、函数式思维、对象模型、模式匹配和 Trait。</p>
+    </section>
+  </header>
+
+  <main>
+    <section class="metric-strip" aria-label="Scala 学习数据">
+      <div><strong id="courseLessonCount">0</strong><span>互动课程</span></div>
+      <div><strong id="courseSummaryCount">0</strong><span>整理讲义</span></div>
+      <div><strong id="courseStageCount">4</strong><span>学习阶段</span></div>
+      <div><strong id="courseTopicCount">0</strong><span>知识标签</span></div>
+    </section>
+
+    <section class="grid-section">
+      <div class="side-title">
+        <p class="eyebrow">Learning Route</p>
+        <h2>先理解表达式，再连接集合、函数和对象。</h2>
+        <p>Scala 路线强调和 Java 的差异：更重表达式、更重不可变值，也更适合函数式和集合操作。</p>
+      </div>
+      <div class="stage-list" id="stageList"></div>
+    </section>
+
+    <section class="grid-section">
+      <div class="side-title">
+        <p class="eyebrow">Lessons</p>
+        <h2>课程列表</h2>
+        <p>按学习阶段整理，点击进入互动课程或对应讲义。</p>
+      </div>
+      <div class="course-browser">
+        <div class="course-tools">
+          <input id="courseSearch" type="search" placeholder="搜索 Scala 知识点，例如 val、Map、模式匹配、Trait" />
+          <button class="btn" id="resetCourseSearch" type="button">重置</button>
+        </div>
+        <p class="result-info" id="courseResultInfo">正在加载课程……</p>
+        <div class="lesson-grid" id="courseLessonGrid"></div>
+      </div>
+    </section>
+
+    <section class="grid-section">
+      <div class="side-title">
+        <p class="eyebrow">Knowledge Map</p>
+        <h2>Scala 知识点地图</h2>
+        <p>这些标签来自课程数据，可作为复习时的快速索引。</p>
+      </div>
+      <div class="knowledge-cloud" id="knowledgeCloud"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><a href="index.html">返回首页</a> · <a href="summaries.html?language=Scala">查看 Scala 讲义库</a></p>
+  </footer>
+
+  <script>globalThis.COURSE_LANGUAGE = "Scala";</script>
+  <script src="js/data.js"></script>
+  <script src="js/summaries-data.js"></script>
+  <script src="js/course-page.js"></script>
+</body>
+</html>
